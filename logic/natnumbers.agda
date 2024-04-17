@@ -1,5 +1,4 @@
-
-module NatNumbers where
+module natnumbers where
   data Bool : Set where
     true : Bool
     false : Bool
@@ -102,3 +101,14 @@ module NatNumbers where
     
   twoToThreePowerEqualEight : two ^ three ≡ eight
   twoToThreePowerEqualEight = refl  
+
+  module first_order_dependent_types where
+    open import Data.String
+
+    data Term : Set where
+      var : String → Term
+      abs : String → Term → Term
+      app : Term → Term → Term
+
+
+      

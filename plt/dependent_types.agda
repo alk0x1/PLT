@@ -1,51 +1,58 @@
-infixr 5 _∷_
+module dependent_types where
 
-data Nat : Set where
-  zero : Nat
-  succ : Nat → Nat
+-- Π-types (Dependent Product Types) ∀
+-- - type of the output can depend on the actual input value passed to the function. 
+-- - Π(x:A)→B(x), Here B depends on x
+-- - defining functions and ensuring that operations can be performed safely under all conditions specified by the input
+-- Σ-types (Dependent Sum Types) ∃
+-- - type of the second component of the pair can depend on the value of the first component
+-- - Σ(x:A)×B(x), Here we have a pair where the element of type B(x) vary depending on x.
+-- - representing data structures and states where one part of the structure or state may determine the characteristics of another part
 
-data Vec (A : Set) : Nat → Set where
-  []  : Vec A zero
-  _∷_ : ∀ {n} → A → Vec A n → Vec A (succ n)
+module VecExample where
+  data Nat : Set where
+    zero : Nat
+    succ : Nat → Nat
 
--- {Length} n : Nat 
--- {Value}  A : Data
--- init : Πn:Nat. data → Vector n
-init : ∀ {A : Set} (n : Nat) (v : A) → Vec A n
-init zero v = []
-init (succ n) v = v ∷ init n v
+  data Vec (A : Set) : Nat → Set where
+    []  : Vec A zero
+    _∷_ : ∀ {n} → A → Vec A n → Vec A (succ n)
+  infixr 5 _∷_
 
-one : Nat
-one = succ zero
-two : Nat
-two = succ (succ zero)
-three : Nat
-three = succ (succ (succ zero))
-five : Nat
-five = succ (succ (succ (succ (succ zero))))
+  -- Initialize a vector of length n with all elements set to v.
+  init : ∀ {A : Set} (n : Nat) (v : A) → Vec A n
+  init zero    v = []
+  init (succ n) v = v ∷ init n v
 
-exampleVec : Vec Nat three
-exampleVec = init three five
+  one : Nat
+  one = succ zero
+  two : Nat
+  two = succ one
+  three : Nat
+  three = succ two
+  five : Nat
+  five = succ (succ three)
 
--- cons : Πn:Nat. data → Vector n → Vector (n+1).
--- cons : ∀ {A: Set} (n: Nat) (e: A) (v : Vec) -> Vec A n v
-cons : ∀ {A : Set} {n : Nat} → A → Vec A n → Vec A (succ n)
-cons e v = e ∷ v
+  exampleVec : Vec Nat three
+  exampleVec = init three five
 
-exampleVec3 : Vec Nat three
-exampleVec3 = one ∷ two ∷ three ∷ []
+  -- Construct a vector by prepending an element.
+  cons : ∀ {A : Set} {n : Nat} → A → Vec A n → Vec A (succ n)
+  cons e v = e ∷ v
 
-exampleVector : Vec Nat three
-exampleVector = cons three (cons two (cons one []))
+  exampleVec3 : Vec Nat three
+  exampleVec3 = one ∷ two ∷ three ∷ []
 
--- first : Πn:Nat.Vector(n+1) → data
-first : ∀ {A : Set} {n : Nat} -> Vec A (succ n) -> A
-first (x ∷ _) = x
- 
-exampleVecx : Vec Nat three
-exampleVecx = one ∷ two ∷ three ∷ []
-exampleFirst : Nat
-exampleFirst = first exampleVec
+  exampleVector : Vec Nat three
+  exampleVector = cons three (cons two (cons one []))
+
+  first : ∀ {A : Set} {n : Nat} -> Vec A (succ n) -> A
+  first (x ∷ _) = x
+
+  exampleVecx : Vec Nat three
+  exampleVecx = one ∷ two ∷ three ∷ []
+  exampleFirst : Nat
+  exampleFirst = first exampleVecx
 
 -- Axiom Choice
 -- if for every element a of a type A there exists an element b of B such that P(a,b) 
@@ -91,3 +98,4 @@ module PullbackExample where
 
   Pullback : Set
   Pullback = Σ (A × B) λ ab → f (proj₁ ab) ≡ g (proj₂ ab)
+
