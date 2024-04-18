@@ -1,0 +1,155 @@
+DIGEST 7f3036473f5b84b586483c80bfa122b0
+Fsyntax
+R15:18 Coq.Lists.List <> <> lib
+R28:40 Coq.Lists.List ListNotations <> mod
+R58:63 Coq.Strings.String <> <> lib
+R81:84 Coq.Bool.Bool <> <> lib
+ind 99:102 <> Term
+constr 118:120 <> var
+constr 143:145 <> abs
+constr 176:178 <> app
+R130:133 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R124:129 Coq.Strings.String <> string ind
+R134:137 syntax <> Term:1 ind
+R155:158 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R149:154 Coq.Strings.String <> string ind
+R163:166 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R159:162 syntax <> Term:1 ind
+R167:170 syntax <> Term:1 ind
+R186:189 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R182:185 syntax <> Term:1 ind
+R194:197 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R190:193 syntax <> Term:1 ind
+R198:201 syntax <> Term:1 ind
+scheme 99:102 <> Term_rect
+scheme 99:102 <> Term_ind
+scheme 99:102 <> Term_rec
+scheme 99:102 <> Term_sind
+ind 216:223 <> TypeExpr
+constr 238:244 <> typeVar
+constr 271:277 <> depProd
+constr 328:334 <> typeApp
+R254:257 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R248:253 Coq.Strings.String <> string ind
+R258:265 syntax <> TypeExpr:3 ind
+R287:290 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R281:286 Coq.Strings.String <> string ind
+R299:302 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R291:298 syntax <> TypeExpr:3 ind
+R311:314 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R303:310 syntax <> TypeExpr:3 ind
+R315:322 syntax <> TypeExpr:3 ind
+R346:349 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R338:345 syntax <> TypeExpr:3 ind
+R358:361 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R350:357 syntax <> TypeExpr:3 ind
+R362:369 syntax <> TypeExpr:3 ind
+scheme 216:223 <> TypeExpr_rect
+scheme 216:223 <> TypeExpr_ind
+scheme 216:223 <> TypeExpr_rec
+scheme 216:223 <> TypeExpr_sind
+ind 383:386 <> Kind
+constr 401:404 <> star
+constr 417:426 <> typeFamily
+R408:411 syntax <> Kind:5 ind
+R436:439 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R430:435 Coq.Strings.String <> string ind
+R448:451 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R440:447 syntax <> TypeExpr ind
+R456:459 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R452:455 syntax <> Kind:5 ind
+R460:463 syntax <> Kind:5 ind
+scheme 383:386 <> Kind_rect
+scheme 383:386 <> Kind_ind
+scheme 383:386 <> Kind_rec
+scheme 383:386 <> Kind_sind
+ind 503:509 <> Binding
+constr 518:528 <> TypeBinding
+constr 566:576 <> KindBinding
+R538:541 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R532:537 Coq.Strings.String <> string ind
+R550:553 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R542:549 syntax <> TypeExpr ind
+R554:560 syntax <> Binding:7 ind
+R586:589 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R580:585 Coq.Strings.String <> string ind
+R594:597 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R590:593 syntax <> Kind ind
+R598:604 syntax <> Binding:7 ind
+scheme 503:509 <> Binding_rect
+scheme 503:509 <> Binding_ind
+scheme 503:509 <> Binding_rec
+scheme 503:509 <> Binding_sind
+def 619:625 <> Context
+R630:633 Coq.Init.Datatypes <> list ind
+R635:641 syntax <> Binding ind
+def 656:669 <> addTypeBinding
+R679:684 Coq.Strings.String <> string ind
+binder 672:675 <> name:9
+R692:699 syntax <> TypeExpr ind
+binder 688:688 <> t:10
+R709:715 syntax <> Context def
+binder 703:705 <> ctx:11
+R720:726 syntax <> Context def
+R733:733 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R752:756 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R734:744 syntax <> TypeBinding constr
+R746:749 syntax <> name:9 var
+R751:751 syntax <> t:10 var
+R757:759 syntax <> ctx:11 var
+def 773:786 <> addKindBinding
+R796:801 Coq.Strings.String <> string ind
+binder 789:792 <> name:12
+R809:812 syntax <> Kind ind
+binder 805:805 <> K:13
+R822:828 syntax <> Context def
+binder 816:818 <> ctx:14
+R833:839 syntax <> Context def
+R846:846 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R865:869 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R847:857 syntax <> KindBinding constr
+R859:862 syntax <> name:12 var
+R864:864 syntax <> K:13 var
+R870:872 syntax <> ctx:14 var
+def 886:895 <> lookupType
+R904:909 Coq.Strings.String <> string ind
+binder 898:900 <> key:15
+R919:925 syntax <> Context def
+binder 913:915 <> ctx:16
+R930:935 Coq.Init.Datatypes <> option ind
+R937:944 syntax <> TypeExpr ind
+R957:959 syntax <> ctx:16 var
+R970:971 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R976:979 Coq.Init.Datatypes <> None constr
+R1000:1003 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R985:995 syntax <> TypeBinding constr
+R1015:1024 Coq.Strings.String <> eqb def
+R1026:1028 syntax <> key:15 var
+R1049:1058 syntax <> lookupType:17 def
+R1060:1062 syntax <> key:15 var
+R1037:1040 Coq.Init.Datatypes <> Some constr
+R1088:1091 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1073:1083 syntax <> KindBinding constr
+R1100:1109 syntax <> lookupType:17 def
+R1111:1113 syntax <> key:15 var
+def 1137:1146 <> lookupKind
+R1155:1160 Coq.Strings.String <> string ind
+binder 1149:1151 <> key:19
+R1170:1176 syntax <> Context def
+binder 1164:1166 <> ctx:20
+R1181:1186 Coq.Init.Datatypes <> option ind
+R1188:1191 syntax <> Kind ind
+R1204:1206 syntax <> ctx:20 var
+R1217:1218 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1223:1226 Coq.Init.Datatypes <> None constr
+R1247:1250 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1232:1242 syntax <> TypeBinding constr
+R1259:1268 syntax <> lookupKind:21 def
+R1270:1272 syntax <> key:19 var
+R1298:1301 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1283:1293 syntax <> KindBinding constr
+R1313:1322 Coq.Strings.String <> eqb def
+R1324:1326 syntax <> key:19 var
+R1347:1356 syntax <> lookupKind:21 def
+R1358:1360 syntax <> key:19 var
+R1335:1338 Coq.Init.Datatypes <> Some constr
