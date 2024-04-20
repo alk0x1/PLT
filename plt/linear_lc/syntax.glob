@@ -1,0 +1,149 @@
+DIGEST f2f70e674d2c9765a283a2dfe79541d8
+Fsyntax
+R226:231 Coq.Strings.String <> <> lib
+R249:252 Coq.Lists.List <> <> lib
+R262:274 Coq.Lists.List ListNotations <> mod
+ind 288:296 <> Qualifier
+constr 311:313 <> lin
+constr 330:331 <> un
+R317:325 syntax <> Qualifier:1 ind
+R335:343 syntax <> Qualifier:1 ind
+scheme 288:296 <> Qualifier_rect
+scheme 288:296 <> Qualifier_ind
+scheme 288:296 <> Qualifier_rec
+scheme 288:296 <> Qualifier_sind
+ind 357:360 <> Term
+constr 375:377 <> var
+constr 399:405 <> boolean
+constr 438:446 <> condition
+constr 481:482 <> pr
+constr 523:525 <> abs
+constr 555:558 <> splt
+R387:390 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R381:386 Coq.Strings.String <> string ind
+R391:394 syntax <> Term:3 ind
+R418:421 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R409:417 syntax <> Qualifier ind
+R426:429 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R422:425 Coq.Init.Datatypes <> bool ind
+R430:433 syntax <> Term:3 ind
+R453:456 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R449:452 syntax <> Term:3 ind
+R461:464 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R457:460 syntax <> Term:3 ind
+R469:472 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R465:468 syntax <> Term:3 ind
+R473:476 syntax <> Term:3 ind
+R495:498 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R486:494 syntax <> Qualifier ind
+R503:506 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R499:502 syntax <> Term:3 ind
+R511:514 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R507:510 syntax <> Term:3 ind
+R515:518 syntax <> Term:3 ind
+R535:538 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R529:534 Coq.Strings.String <> string ind
+R543:546 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R539:542 syntax <> Term:3 ind
+R547:550 syntax <> Term:3 ind
+R566:569 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R562:565 syntax <> Term:3 ind
+R576:579 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R570:575 Coq.Strings.String <> string ind
+R586:589 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R580:585 Coq.Strings.String <> string ind
+R594:597 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R590:593 syntax <> Term:3 ind
+R598:601 syntax <> Term:3 ind
+scheme 357:360 <> Term_rect
+scheme 357:360 <> Term_ind
+scheme 357:360 <> Term_rec
+scheme 357:360 <> Term_sind
+ind 615:621 <> Pretype
+constr 637:644 <> BoolType
+constr 660:667 <> PairType
+constr 705:712 <> FuncType
+R648:654 syntax <> Pretype:5 ind
+R678:681 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R671:677 syntax <> Pretype:5 ind
+R689:692 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R682:688 syntax <> Pretype:5 ind
+R693:699 syntax <> Pretype:5 ind
+R723:726 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R716:722 syntax <> Pretype:5 ind
+R734:737 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R727:733 syntax <> Pretype:5 ind
+R738:744 syntax <> Pretype:5 ind
+scheme 615:621 <> Pretype_rect
+scheme 615:621 <> Pretype_ind
+scheme 615:621 <> Pretype_rec
+scheme 615:621 <> Pretype_sind
+ind 758:759 <> Ty
+constr 775:782 <> QualType
+R795:798 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R786:794 syntax <> Qualifier ind
+R806:809 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R799:805 syntax <> Pretype ind
+R810:811 syntax <> Ty:7 ind
+scheme 758:759 <> Ty_rect
+scheme 758:759 <> Ty_ind
+scheme 758:759 <> Ty_rec
+scheme 758:759 <> Ty_sind
+ind 825:831 <> Context
+constr 847:859 <> empty_context
+constr 875:888 <> extend_context
+R863:869 syntax <> Context:9 ind
+R899:902 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R892:898 syntax <> Context:9 ind
+R909:912 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R903:908 Coq.Strings.String <> string ind
+R915:918 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R913:914 syntax <> Ty ind
+R919:925 syntax <> Context:9 ind
+scheme 825:831 <> Context_rect
+scheme 825:831 <> Context_ind
+scheme 825:831 <> Context_rec
+scheme 825:831 <> Context_sind
+def 938:951 <> context_concat
+R966:972 syntax <> Context ind
+binder 954:957 <> ctx1:11
+binder 959:962 <> ctx2:12
+R977:983 syntax <> Context ind
+R996:999 syntax <> ctx1:11 var
+R1010:1022 syntax <> empty_context constr
+R1027:1030 syntax <> ctx2:12 var
+R1036:1049 syntax <> extend_context constr
+R1162:1175 syntax <> extend_context constr
+R1178:1191 syntax <> context_concat:13 def
+R1198:1201 syntax <> ctx2:12 var
+def 1228:1239 <> example_ctx1
+R1243:1249 syntax <> Context ind
+R1256:1269 syntax <> extend_context constr
+R1272:1285 syntax <> extend_context constr
+R1287:1299 syntax <> empty_context constr
+R1306:1313 syntax <> QualType constr
+R1315:1317 syntax <> lin constr
+R1319:1326 syntax <> BoolType constr
+R1335:1342 syntax <> QualType constr
+R1344:1345 syntax <> un constr
+R1347:1354 syntax <> BoolType constr
+def 1370:1381 <> example_ctx2
+R1385:1391 syntax <> Context ind
+R1398:1411 syntax <> extend_context constr
+R1413:1425 syntax <> empty_context constr
+R1432:1439 syntax <> QualType constr
+R1441:1443 syntax <> lin constr
+R1445:1452 syntax <> BoolType constr
+def 1468:1491 <> example_ctx_concatenated
+R1495:1501 syntax <> Context ind
+R1508:1521 syntax <> context_concat def
+R1523:1534 syntax <> example_ctx1 def
+R1536:1547 syntax <> example_ctx2 def
+def 1565:1576 <> is_empty_ctx
+R1585:1591 syntax <> Context ind
+binder 1579:1581 <> ctx:15
+R1596:1599 Coq.Init.Datatypes <> bool ind
+R1612:1614 syntax <> ctx:15 var
+R1625:1637 syntax <> empty_context constr
+R1642:1645 Coq.Init.Datatypes <> true constr
+R1656:1660 Coq.Init.Datatypes <> false constr
